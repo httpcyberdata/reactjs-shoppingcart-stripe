@@ -69,6 +69,7 @@ ___________
 3. yarn start
 4. Click 'add to cart' to initially add an item to the cart. Then, use the +/- buttons to increase or decrease the quantity of the item in cart.
 5. Click 'Cart' to view what items are in your cart and the total sum of the quantities of all the items in the cart.
+6. When 1 or more items in cart, click 'Purchase Items' and be forwarded to Stripe for payment. (its only for testing)
 
 
 ### Photos of project:
