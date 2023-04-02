@@ -53,6 +53,15 @@ ___________
 	```
 2. Cannot read properties of undefined (reading 'find')
 	The problem was I wrote a duplicate setCartProducts() function  in the scope of the addOneToCart() function and wrapped the setCartProducts around the code for iterating over the cartProducts array instead of writing a JavaScript map function to iterate upon the cartProducts array.
+3. TypeError: Failed to fetch
+	The problem was the server sent a request to /checkout with https instead of http. Since there is no secure route via https the server failed to fetch anything from that route. 
+	The solution was to change the string as below:
+	```
+		// wrong
+		await fetch('https://localhost:4000/checkout'
+		// correct
+		await fetch('http://localhost:4000/checkout',
+	```
 
 ### How to use
 1. clone / download
